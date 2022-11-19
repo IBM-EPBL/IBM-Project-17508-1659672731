@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
+</head>
+
+<body>
+    <h1 style="color:rgb(78, 146, 248)" >Register Page</h1>
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        {{ form.submit }}
+    </form>
+    <br><br>
+    
+    <footer id="footer">
+        Made BY <a href="https://github.com/IBM-EPBL/IBM-Project-17508-1659672731"> Team </a>
+        
+    </footer><br /><br /><br />
+
+<style>
+    @media screen and (min-width: 480px) {
+  #form {
+    width:400px;
+  }
+}
+    @-webkit-keyframes animatebottom {
+  0% {
+opacity:0;
+    margin-top:500px;
+}
+
+
+
+100% {
+opacity:1;
+    margin-top:0px;
+}
+}
+
+@keyframes animatebottom { 
+  0% {
+opacity:0;
+    margin-top:500px;
+}
+
+
+
+100% {
+opacity:1;
+    margin-top:0px;
+}
+}
+        input{
+        color: #888;margin:5px;
+            border-radius: 0px;
+    border: 0px solid #eee;
+    padding: 8px;
+    background: #eee;
+    transition-duration:.5s;
+        }
+        Input:Focus{
+            border-radius:50px;
+            background-color: #ccc;
+            color:#fff;
+        }
+        a{
+    text-decoration:none!important;
+    color:#fff;
+}
+        hr {
+    border: 2px solid #c1c1c1;
+}
+        button{
+            cursor: hand;
+            border: none;
+    background: #27a5df;
+    color: rgb(5, 235, 128);
+    padding: 11px 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition-duration:.1s;
+        }
+        Button:active{
+            background-color: #555;
+            
+        }
+        *{
+            outline: none;
+            user-select: none;
+        }
+        H1{
+            width:100%;
+            color: #888;
+        }
+        #form{
+        outline:15px solid #4bbaed;
+        margin: 20px;
+        border-radius: 10px;
+    text-align: -webkit-center;
+    border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+    box-shadow: -1px 1px 20px rgba(0, 0, 0,0.5);
+    Border:none;
+    outline:none;
+    animation:  animatebottom 1s cubic-bezier(1, -0.06, 0.26, 1.06);
+        }
+        body{
+         -webkit-user-select:none;
+   -moz-user-select: none;
+   -ms-user-select: none; 
+    user-select: none;
+    
+  /* Changed background - August 2020 */ background-image:url("https://img.freepik.com/free-vector/gradient-background-green-modern-designs_343694-2067.jpg?w=1060&t=st=1668430983~exp=1668431583~hmac=95cbc770a0cc885a77d9f32c094c3269fb1be74c3119b9ba2afbb9e2972ccfce");
+  
+    background-attachment: fixed;
+    background-position: bottom left ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:1s;
+            padding: 10px;
+            margin:0;
+            color: #888;
+            font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+            text-align: -webkit-center;
+            
+        }
+        
+        /* Changed footer - August 2020 */
+        footer{
+            padding:15px 15px;
+            width: 80%;
+            position: fixed;
+            bottom: 2%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fff;
+            text-align:-webkit-center;
+            color:#fff!important;
+            border-radius: 50px;
+            color: #fff;
+            background-color: rgba(255,255,255,0.25);
+            
+        }
+header h1{
+width:90%;
+Border: 5px dotted #27a5df;
+    color: #27a5df;
+    text-align:-webkit-center;
+    border-radius:5px;
+}
+</style>
+    <a href="{{ url_for('login') }}">Already have an account? Log In</a>
+
+    <!-- footer -->
+	<footer class="text-center py-5">
+		<div class="container py-md-3">
+			<!-- logo -->
+			<h2 class="logo2 text-center" style="color:aliceblue;font-family: Verdana">Fertilizer Recommentation System for Disease Prediction</h2>
+			<!-- //logo -->
+			<!-- address -->
+			<div class="contact-left-footer mt-4">
+
+
+
+
+
+				<!-- <a href="community.html">Community</a> -->
+				
+			</div>
+			<div class="w3l-copy text-center">
+				<p2 class="text-da" style="color:white;font-family: Verdana, sans-serif;">A Project For IBM<br> </p2>
+			</div>
+			<p2 class="homelogo" style="color:white;">
+			<p2 style="color:white;font-family: Verdana, sans-serif;">Made with ❤️ by Team : PNT2022TMID38633 </p2></br>
+			<p2 style="color:white;font-family: Verdana, sans-serif;" >&copy; Copyright 2022 all rights reserved</p2></br></br>
+			<p2 style="color:white;font-family: Verdana, sans-serif;" ><marquee>Created By ❤️ <b> : Gokul : Bharathkannan : Balabaskaran : Pachaiappan : Jayaprakash : </b></marquee></p2>
+		</p2>
+		</div>
+</body>
+
+</html>

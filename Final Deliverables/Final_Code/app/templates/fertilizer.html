@@ -1,0 +1,166 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  html body {
+    background: rgb(2,0,36);
+background: linear-gradient(11deg, rgba(2,0,36,1) 0%, rgba(15,121,9,1) 0%, rgba(12,141,63,1) 42%, rgba(0,212,255,1) 100%);
+  }
+</style>
+<style>
+  label {
+
+font-family: 'Raleway', sans-serif;
+font-size: 1.1875rem;
+font-weight: 400;
+letter-spacing: 0.1rem;
+font-style: normal;
+text-transform: capitalize;
+color: #FFFFFF;
+background-color: #5ca8f0;
+border-radius: 0.625rem;
+-webkit-border-radius: 0.625rem;
+-moz-border-radius: 0.625rem;
+padding: 0.3rem 0.4rem;
+border-style: solid;
+border-width: 0rem;
+border-color: #EF2D56;
+-webkit-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+-moz-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+
+}
+</style>
+<!--Form Section-->
+<br /><br />
+<h2 style="text-align: center; margin: 0px; color: black"><b>Want Expert advise on fertilizer based on your Soil</b>?</h2>
+<br />
+<style>
+
+  label {
+    background: rgb(2,0,36);
+background: linear-gradient(11deg, rgba(2,0,36,1) 0%, rgba(15,121,9,1) 0%, rgba(12,141,63,1) 42%, rgba(0,212,255,1) 100%);
+    
+}
+
+
+</style>
+<div
+  style="
+    width: 350px;
+    height: 40rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+  "
+>
+  <form method="POST" action="{{ url_for('fert_recommend') }}">
+    <div class="form-group">
+      <label for="Nitrogen" style="font-size: 17px"><b>Nitrogen</b></label>
+      <input
+        type="number"
+        class="form-control"
+        id="Nitrogen"
+        name="nitrogen"
+        placeholder="Enter the value (example:50)"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label for="Phosphorous" style="font-size: 17px"
+        ><b>Phosphorous</b></label
+      >
+      <input
+        type="number"
+        class="form-control"
+        id="Phosphorous"
+        name="phosphorous"
+        placeholder="Enter the value (example:50)"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="Pottasium" style="font-size: 17px"><b>Pottasium</b></label>
+      <input
+        type="number"
+        class="form-control"
+        id="Pottasium"
+        name="pottasium"
+        placeholder="Enter the value (example:50)"
+        style="font-weight: bold"
+        required
+      />
+    </div>
+    <!-- <div class="form-group">
+      <label for="ph" style="font-size: 17px"><b>ph level</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="ph"
+        name="ph"
+        placeholder="Enter the value"
+        style="font-weight: bold"
+        required
+      />
+    </div> -->
+    <div class="form-group">
+      <label for="crop" style="font-size: 17px"
+        ><b>Crop you want to grow</b></label
+      >
+      <select
+        name="cropname"
+        class="form-control"
+        id="crop"
+        placeholder="Select a crop"
+        style="font-weight: bold"
+        required
+      >
+        <option selected>Select crop</option>
+        <option>rice</option>
+        <option>maize</option>
+        <option>chickpea</option>
+        <option>kidneybeans</option>
+        <option>pigeonpeas</option>
+        <option>mothbeans</option>
+        <option>mungbean</option>
+        <option>blackgram</option>
+        <option>lentil</option>
+        <option>pomegranate</option>
+        <option>banana</option>
+        <option>mango</option>
+        <option>grapes</option>
+        <option>watermelon</option>
+        <option>muskmelon</option>
+        <option>apple</option>
+        <option>orange</option>
+        <option>papaya</option>
+        <option>coconut</option>
+        <option>cotton</option>
+        <option>jute</option>
+        <option>coffee</option>
+      </select>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <button
+        type="submit"
+        class="btn btn-info"
+        style="
+          color: black;
+          font-weight: bold;
+          width: 130px;
+          height: 50px;
+          border-radius: 12px;
+          font-size: 21px;
+        "
+      >
+        Predict
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock %}

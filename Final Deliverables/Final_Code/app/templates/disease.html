@@ -1,0 +1,107 @@
+{% extends 'layout.html' %} {% block body %}
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+    <h1></h1>
+</div>
+
+<style>
+  html body {
+    background: rgb(2,0,36);
+background: linear-gradient(11deg, rgba(2,0,36,1) 0%, rgba(15,121,9,1) 0%, rgba(12,141,63,1) 42%, rgba(0,212,255,1) 100%);
+  }
+</style>
+<style>
+  label {
+
+font-family: 'Raleway', sans-serif;
+font-size: 1.1875rem;
+font-weight: 400;
+letter-spacing: 0.1rem;
+font-style: normal;
+text-transform: capitalize;
+color: #FFFFFF;
+background-color: #5ca8f0;
+border-radius: 0.625rem;
+-webkit-border-radius: 0.625rem;
+-moz-border-radius: 0.625rem;
+padding: 0.3rem 0.4rem;
+border-style: solid;
+border-width: 0rem;
+border-color: #EF2D56;
+-webkit-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+-moz-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+
+}
+</style>
+<br /><br />
+  <h2 style="text-align: center; margin: 0px; color: black"><b>Wanna know which disease Caught to your plant ?</b></h2>
+  <br />
+  <br>
+
+<div style="
+    width: 350px;
+    height: 50rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-weight: bold;
+  ">
+
+<style>
+  form {
+
+font-family: 'Raleway', sans-serif;
+font-size: 1.1875rem;
+font-weight: 400;
+letter-spacing: 0.1rem;
+font-style: normal;
+text-transform: capitalize;
+color: #FFFFFF;
+background-color: #5ca8f0;
+border-radius: 0.625rem;
+-webkit-border-radius: 0.625rem;
+-moz-border-radius: 0.625rem;
+padding: 0.3rem 0.4rem;
+border-style: solid;
+border-width: 0rem;
+border-color: #EF2D56;
+-webkit-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+-moz-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+-box-shadow: 5px 7px 8px -1px rgba(51,51,51,0.51);
+
+}
+</style>
+
+
+  <form class="form-signin" method=post enctype=multipart/form-data>
+
+    <h2 class="h4 mb-3 font-weight-normal">Upload Your Image</h2>
+    <input type="file" name="file" class="form-control-file" id="inputfile" onchange="preview_image(event)" style="font-weight: bold;">
+    <br>
+    <br>
+    <img id="output-image" class="rounded mx-auto d-block" />
+    <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-weight: bold;">Predict</button>
+
+
+  </form>
+  
+</div>
+
+<script type="text/javascript">
+  function preview_image(event) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      var output = document.getElementById('output-image')
+      output.src = reader.result;
+    }
+    reader.readAsDataURL(event.target.files[0]);
+  }
+</script>
+
+</div>
+{% endblock %}
