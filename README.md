@@ -1,3 +1,6 @@
+[🌴 Fertilizer Recommentation System For Disease Prediction 😊   (Demo Video Link ▶️ - Click Here ⬅️ )](https://www.youtube.com/watch?v=frnCRmCW3Fc&ab_channel=GoberTechnologies)
+
+
 <a href="https://github.com/IBM-EPBL/IBM-Project-17508-1659672731">
  <img src="https://i.postimg.cc/rmFvc6Yh/fin-ibm.png">
 </a>
@@ -12,9 +15,7 @@
   <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.webp" type="image/webp">
   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif" alt="❤" width="20" height="20">
 </picture> </h4>
-<br>
-[Want Demo Video Link - Click Here](https://www.youtube.com/watch?v=frnCRmCW3Fc&ab_channel=GoberTechnologies)
- 
+
 <p align="center">
 <a href="https://www.ibm.com/in-en">
 <img src="https://img.shields.io/badge/IBM-052FAD.svg?style=for-the-badge&logo=IBM&logoColor=white"> 
